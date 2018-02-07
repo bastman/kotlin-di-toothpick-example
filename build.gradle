@@ -3,7 +3,7 @@ task wrapper(type: Wrapper) {
 }
 
 
-subprojects {
+allprojects {
     buildscript {
         repositories {
             mavenCentral()
@@ -17,5 +17,6 @@ subprojects {
     repositories {
         mavenCentral()
         jcenter()
+        maven {url "https://jitpack.io"}
     }
 }
